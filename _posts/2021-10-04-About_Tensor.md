@@ -1108,5 +1108,5 @@ print(tf.sparse.to_dense(sparse_tensor))
      [0 0 2 0]
      [0 0 0 0]], shape=(3, 4), dtype=int32)
 
-[맨 위로](#tensorflow-텐서tensor란-무엇인가?)
+[맨 위로](#tensorflow-텐서tensor란-무엇인가)
 
