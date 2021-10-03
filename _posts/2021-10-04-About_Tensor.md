@@ -27,7 +27,7 @@ title:  "[TensorFlow] 텐서(Tensor)란 무엇인가?"
 
 [브로드캐스팅](#브로드캐스팅broadcasting)
 
-[tf.convert_to_tensor](#tf.converttotensor)
+[tf.convert_to_tensor](#tfconvert_to_tensor)
 
 [비정형 텐서](#비정형-텐서)
 
