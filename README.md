@@ -4,30 +4,15 @@ title: About
 permalink: /about/
 ---
 
-## Theme Monos
-> Simple and lightweight theme for Jekyll
+## 소개글
+> 소프트웨어 개발자가 되고자 하는 사람
 
-### Features
-- Responsive.
-- Syntax Highlight
-- Most optimized theme for tech blog.
-- Lightweight with minimum stylesheet.
-- Easy to customize.
-- Offers category menu.
+### 목표
+- 검색 기능 구현하기
+- 카테고리 정리하기
+- 테마 직접 만들어보기
+- 이전글, 다음글 구현하기
+- 바로가기 링크버 구현하기
+- 꾸준히 블로그 관리하기
 
-### _config.yml
-> Code block will look like this.
-```yml
-highlighter-theme: monokai //you can change your syntax color scheme.
-date_format: "%Y-%M-%D" //and date format.
-```
-
-### Screenshots
-#### Page
-![alt text](/public/img/screenshot-1.png)
-#### Articles
-![alt text](/public/img/screenshot-2.png)
-#### Page - Mobile
-![alt text](/public/img/screenshot-m1.png)
-#### Page - Articles
-![alt text](/public/img/screenshot-m2.png)
+### 무엇을 추가할까?
