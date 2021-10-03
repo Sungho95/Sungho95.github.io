@@ -6,19 +6,33 @@ title:  "[TensorFlow] 텐서(Tensor)란 무엇인가?"
 # [TensorFlow] 텐서(Tensor)란 무엇인가?
 
 **바로가기**
-[텐서(Tensor)](#텐서(tensor))
+
+[텐서(Tensor)](#텐서tensor)
+
 [텐서의 기초](#텐서의-기초)
+
 [텐서의 연산](#텐서의-연산)
+
 [형상 정보](#형상-정보)
+
 [인덱싱](#인덱싱)
+
 [단일 축 인덱싱](#단일-축-인덱싱)
+
 [다중 축 인덱싱](#다중-축-인덱싱)
+
 [형상 조작](#형상-조작)
+
 [DTypes](#dtypes)
-[브로드캐스팅](#브로드캐스팅(broadcasting))
+
+[브로드캐스팅](#브로드캐스팅broadcasting)
+
 [tf.convert_to_tensor](#tf.convert-to-tensor)
+
 [비정형 텐서](#비정형-텐서)
+
 [문자열 텐서](#문자열-텐서)
+
 [희소 텐서](#희소-텐서)
 
 
@@ -1094,5 +1108,5 @@ print(tf.sparse.to_dense(sparse_tensor))
      [0 0 2 0]
      [0 0 0 0]], shape=(3, 4), dtype=int32)
 
-[맨 위로](#[tensorflow]-텐서(tensor)란-무엇인가?)
+[맨 위로](#tensorflow-텐서tensor란-무엇인가?)
 
