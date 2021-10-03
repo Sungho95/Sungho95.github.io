@@ -340,7 +340,7 @@ print("모든 요소의 수(3*2*4*5) :", tf.size(rank_4_tensor).numpy())
 
 이러한 방식으로 특성 벡터는 연속적인 메모리 영역입니다.
 
-![tensor4](https://user-images.githubusercontent.com/80394894/135772253-99f800ae-db64-47c1-8744-b62c957addf9.png)
+![4](https://user-images.githubusercontent.com/80394894/135772547-69980e06-67ee-4482-bb51-b77990d44f05.PNG)
 
 
 
@@ -477,7 +477,10 @@ print(rank_3_tensor[:, :, 4])
      [24 29]], shape=(3, 2), dtype=int32)
 
 
-![tensor5](https://user-images.githubusercontent.com/80394894/135772257-68f7bfff-f922-4e7e-826d-5a60979564a8.png)
+
+![5](https://user-images.githubusercontent.com/80394894/135772554-d3e8282e-ad5a-44c5-b3e5-5404f65a19d0.PNG)
+
+
 [텐서 슬라이싱 가이드](https://tensorflow.org/guide/tensor_slicing)에서 인덱싱을 적용하여 텐서의 개별 요소를 조작하는 방법을 알아볼 수 있습니다.
 
 
@@ -589,7 +592,7 @@ print(tf.reshape(rank_3_tensor, [3, -1]))
      [10 11 12 13 14 15 16 17 18 19]
      [20 21 22 23 24 25 26 27 28 29]], shape=(3, 10), dtype=int32)
 
-![tensor6](https://user-images.githubusercontent.com/80394894/135772262-23f3872f-7304-4e10-90c9-c72921f16a2e.png)
+![6](https://user-images.githubusercontent.com/80394894/135772570-71d461a6-0fe4-4d49-9c9b-e485604f9225.PNG)
 
 
 
@@ -633,14 +636,9 @@ except Exception as e:
     InvalidArgumentError: Input to reshape is a tensor with 30 values, but the requested shape requires a multiple of 7 [Op:Reshape]
 
 
-<table>
-<th colspan="3">몇 가지 잘못된 재구성</th>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/reshape-bad.png?raw=true" alt="You can't reorder axes, use tf.transpose for that">   </td>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/reshape-bad4.png?raw=true" alt="Anything that mixes the slices of data together is probably wrong.">   </td>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/reshape-bad2.png?raw=true" alt="The new shape must fit exactly.">   </td>
-</tr>
-</table>
+![6](https://user-images.githubusercontent.com/80394894/135772593-042e2b86-362b-438c-bbd8-0fae273edd4c.PNG)
+
+
 완전히 지정되지 않은 형상 전체에 걸쳐 실행할 수 있습니다. 형상에 `None`(축 길이를 알 수 없음)이 포함되거나 전체 형상이 `None`(텐서의 순위를 알 수 없음)입니다.
 
 [tf.RaggedTensor](#ragged_tensors)를 제외하고, TensorFlow의 상징적인 그래프 빌딩 API의 컨텍스트에서만 발생합니다.
@@ -746,14 +744,8 @@ print(tf.multiply(x, y))
      [ 3  6  9 12]], shape=(3, 4), dtype=int32)
 
 
-<table>
-<tr>
-  <th>추가 시 브로드캐스팅: <code>[1, 4]</code>와 <code>[3, 1]</code>의 곱하기는 <code>[3,4]</code>입니다.</th>
-</tr>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/broadcasting.png?raw=true" alt="Adding a 3x1 matrix to a 4x1 matrix results in a 3x4 matrix">   </td>
-</tr>
-</table>
+![7](https://user-images.githubusercontent.com/80394894/135772600-6116d4ec-65c9-490c-b0a8-8b82711e837c.PNG)
+
 
 
 **브로드캐스팅을 사용하지 않는 경우**
@@ -826,14 +818,7 @@ Jake VanderPlas의 저서 *Python Data Science Handbook*의 [해당 섹션](http
 
 예를 들어, 비정형 텐서는 정규 텐서로 표현할 수 없습니다.
 
-<table>
-<tr>
-  <th>`tf.RaggedTensor`, 형상: <code>[4, None]</code> </th>
-</tr>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/ragged.png?raw=true" alt="A 2-axis ragged tensor, each row can have a different length.">   </td>
-</tr>
-</table>
+![8](https://user-images.githubusercontent.com/80394894/135772603-0dbbc63c-2ea5-4b1f-ae03-8c92655ea69c.PNG)
 
 
 ```python
@@ -905,14 +890,8 @@ print(scalar_string_tensor)
 
 **문자열의 벡터 텐서**
 
-<table>
-<tr>
-  <th>문자열의 벡터, 형상: <code>[3,]</code> </th>
-</tr>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/strings.png?raw=true" alt="The string length is not one of the tensor's axes.">   </td>
-</tr>
-</table>
+![9](https://user-images.githubusercontent.com/80394894/135772605-13b8b617-8920-4d7d-aff1-85d36c273f72.PNG)
+
 
 
 ```python
@@ -966,14 +945,7 @@ print(tf.strings.split(tensor_of_strings))
     <tf.RaggedTensor [[b'Gray', b'wolf'], [b'Quick', b'brown', b'fox'], [b'Lazy', b'dog']]>
 
 
-<table>
-<tr>
-  <th>세 개의 분할된 문자열, 형상: <code>[3, None]</code> </th>
-</tr>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/string-split.png?raw=true" alt="Splitting multiple strings returns a tf.RaggedTensor">   </td>
-</tr>
-</table>
+![10](https://user-images.githubusercontent.com/80394894/135772608-e7806dad-ef41-4f1f-aed4-5933f77d9710.PNG)
 
 
 `tf.string.to_number`:
@@ -1033,14 +1005,7 @@ print("\nUnicode values:", unicode_values)
 
 텐서플로우는 `tf.sparse.SparseTensor` 및 관련 연산을 지원하여 희소 데이터를 효율적으로 저장할 수 있습니다.
 
-<table>
-<tr>
-  <th>`tf.SparseTensor`, 형상: <code>[3, 4]</code> </th>
-</tr>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/sparse.png?raw=true" alt="An 3x4 grid, with values in only two of the cells.">   </td>
-</tr>
-</table>
+![11](https://user-images.githubusercontent.com/80394894/135772609-bc5017a3-4488-4292-b0bc-c38daeb258bc.PNG)
 
 
 ```python
