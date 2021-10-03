@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-## 소개글
+## 소개
 > 소프트웨어 개발자가 되고자 하는 사람
 
 ### 목표
