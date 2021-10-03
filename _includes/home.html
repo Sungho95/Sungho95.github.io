@@ -1,6 +1,6 @@
 <article class="post">
   <header class="post-header home">
-    <div class="post-title">Articles</div>
+    <div class="post-title">전체글</div>
   </header>
 
   <div class="post-content">
@@ -13,15 +13,11 @@
         <span class="post-date">{{ post.date | date: date_format }}</span>
       	<a class="post-link" href="{{ post.url | relative_url }}">
     	    {{ post.title | escape }}
-		</a>
+		    </a>
         {%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
-  {%- endif -%}
+    {%- endif -%}
   </div>
 </article>
-
-
-
-</div>
