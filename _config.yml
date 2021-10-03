@@ -63,3 +63,12 @@ incremental: false
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+tipue_search:
+     include:
+         pages: false
+         collections: []
+     exclude:
+         files: [search.html, index.html, tags.html]
+         categories: []
+         tags: []
