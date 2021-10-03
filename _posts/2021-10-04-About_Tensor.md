@@ -126,13 +126,8 @@ print(rank_2_tensor)
   <th>벡터, 형상: <code>[3]</code> </th>
   <th>행렬, 형상: <code>[3, 2]</code> </th>
 </tr>
-<tr>
-  <td>    <img src="images/tensor/scalar.png" alt="A scalar, the number 4">
-</td>
-  <td>    <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/vector.png?raw=true" alt="The line with 3 sections, each one containing a number.">   </td>
-  <td>    <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/matrix.png?raw=true" alt="A 3x2 grid, with each cell containing a number.">   </td>
-</tr>
 </table>
+![tensor1](https://user-images.githubusercontent.com/80394894/135772246-14ff1472-914f-474f-86b0-940da1f81c2c.png)
 
 
 **3차원 텐서**
