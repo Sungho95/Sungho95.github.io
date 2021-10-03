@@ -118,16 +118,10 @@ print(rank_2_tensor)
      [5. 6.]], shape=(3, 2), dtype=float16)
 
 
-
-
-<table>
-<tr>
-  <th>스칼라, 형상: <code>[]</code> </th>
-  <th>벡터, 형상: <code>[3]</code> </th>
-  <th>행렬, 형상: <code>[3, 2]</code> </th>
-</tr>
-</table>
 ![tensor1](https://user-images.githubusercontent.com/80394894/135772246-14ff1472-914f-474f-86b0-940da1f81c2c.png)
+
+
+
 
 
 **3차원 텐서**
@@ -163,18 +157,9 @@ print(rank_3_tensor)
 
 축이 두 개 이상인 텐서를 시각화하는 방법에는 여러 가지가 있습니다.
 
-<table>
-<tr>
-  <th colspan="3">3축 텐서, 형상: <code>[3, 2, 5]</code> </th>
-</tr>
-<tr>
-</tr>
-<tr>
-  <td>    <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/3-axis_numpy.png?raw=true">   </td>
-  <td>    <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/3-axis_front.png?raw=true">   </td>
-  <td>    <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/3-axis_block.png?raw=true">   </td>
-</tr>
-</table>
+![tensor2](https://user-images.githubusercontent.com/80394894/135772249-468bb7ab-63eb-4fed-b8d7-f1996560aafa.png)
+
+
 
 
 **텐서를 넘파이 어레이로 변환**
@@ -319,15 +304,9 @@ print(tf.nn.softmax(c))
 rank_4_tensor = tf.zeros([3, 2, 4, 5])
 ```
 
-<table>
-<tr>
-  <th colspan="2">순위-4 텐서, 형상: <code>[3, 2, 4, 5]</code> </th>
-</tr>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/shape.png?raw=true" alt="A tensor shape is like a vector.">     </td>
-<td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/4-axis_block.png?raw=true" alt="A 4-axis tensor">   </td>
-  </tr>
-</table>
+![tensor3](https://user-images.githubusercontent.com/80394894/135772250-e4529e23-bf03-4b58-96ed-5034f6a279da.png)
+
+
 
 
 **형상 정보 출력**
@@ -361,14 +340,9 @@ print("모든 요소의 수(3*2*4*5) :", tf.size(rank_4_tensor).numpy())
 
 이러한 방식으로 특성 벡터는 연속적인 메모리 영역입니다.
 
-<table>
-<tr>
-<th>일반적인 축 순서</th>
-</tr>
-<tr>
-    <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/shape2.png?raw=true" alt="Keep track of what each axis is. A 4-axis tensor might be: Batch, Width, Height, Features">   </td>
-</tr>
-</table>
+![tensor4](https://user-images.githubusercontent.com/80394894/135772253-99f800ae-db64-47c1-8744-b62c957addf9.png)
+
+
 
 
 ## 인덱싱
@@ -503,15 +477,7 @@ print(rank_3_tensor[:, :, 4])
      [24 29]], shape=(3, 2), dtype=int32)
 
 
-<table>
-<tr>
-<th colspan="2">배치에서 각 예의 모든 위치에서 마지막 특성 선택하기</th>
-</tr>
-<tr>
-    <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/index1.png?raw=true" alt="A 3x2x5 tensor with all the values at the index-4 of the last axis selected.">   </td>
-      <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/index2.png?raw=true" alt="The selected values packed into a 2-axis tensor.">   </td>
-</tr>
-</table>
+![tensor5](https://user-images.githubusercontent.com/80394894/135772257-68f7bfff-f922-4e7e-826d-5a60979564a8.png)
 [텐서 슬라이싱 가이드](https://tensorflow.org/guide/tensor_slicing)에서 인덱싱을 적용하여 텐서의 개별 요소를 조작하는 방법을 알아볼 수 있습니다.
 
 
@@ -623,14 +589,8 @@ print(tf.reshape(rank_3_tensor, [3, -1]))
      [10 11 12 13 14 15 16 17 18 19]
      [20 21 22 23 24 25 26 27 28 29]], shape=(3, 10), dtype=int32)
 
-<table>
-<th colspan="3">몇 가지 좋은 reshape 방법</th>
-<tr>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/reshape-before.png?raw=true" alt="A 3x2x5 tensor">   </td>
-  <td>   <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/reshape-good1.png?raw=true" alt="The same data reshaped to (3x2)x5">   </td>
-  <td> <img src="https://github.com/tensorflow/docs-l10n/blob/master/site/ko/guide/images/tensor/reshape-good2.png?raw=true" alt="The same data reshaped to 3x(2x5)">   </td>
-</tr>
-</table>
+![tensor6](https://user-images.githubusercontent.com/80394894/135772262-23f3872f-7304-4e10-90c9-c72921f16a2e.png)
+
 
 
 
