@@ -129,9 +129,9 @@ plt.show()
 ```
 
 
-​    
-![png](output_13_0.png)
-​    
+
+![output_13_0](https://user-images.githubusercontent.com/80394894/136712662-a06b080e-8663-44f3-b1a3-100d8627cc23.png)
+
 
 
 이제 데이터셋 생성을 완료 했습니다.
@@ -6454,9 +6454,9 @@ plt.show()
 ```
 
 
-​    
-![png](output_51_0.png)
-​    
+
+![output_51_0](https://user-images.githubusercontent.com/80394894/136712673-f284a38d-fd68-407d-a642-4ed1923657c4.png)
+
 
 
 
