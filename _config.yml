@@ -34,6 +34,7 @@ highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
+  - jekyll-toc
 category_dir: category/
 tag_dir: tag/
 
@@ -63,6 +64,14 @@ incremental: false
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+toc: min_level: 
+1 max_level: 6
+ordered_list: false
+no_toc_section_class: no_toc_section
+list_class: section-nav
+sublist_class: '' 
+item_class: toc-entry item_prefix: toc-
 
 tipue_search:
      include:
