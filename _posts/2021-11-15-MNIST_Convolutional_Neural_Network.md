@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "[Keras] MNIST 데이터셋을 이용한 합성곱신경망 모델(CNN) 구현하기"
-toc: true
 ---
 
 ## 합성곱신경망 모델(CNN) 구현
