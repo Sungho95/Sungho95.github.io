@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[DL] MNIST 데이터셋을 이용한 합성곱신경망 모델(CNN) 구현하기"
+title:  "[Keras] MNIST 데이터셋을 이용한 합성곱신경망 모델(CNN) 구현하기"
 toc: true
 ---
 
@@ -254,9 +254,7 @@ plt.legend()
 
 
 
-​    
-![png](output_12_1.png)
-​    
+![output_12_1](https://user-images.githubusercontent.com/80394894/141779419-a4d68cf1-66f4-4f4e-a9b8-8c2325c19a73.png)
 
 
 ## 결론
