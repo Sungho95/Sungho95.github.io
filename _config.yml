@@ -64,19 +64,3 @@ incremental: false
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-1 max_level: 6
-ordered_list: false
-no_toc_section_class: no_toc_section
-list_class: section-nav
-sublist_class: '' 
-item_class: toc-entry item_prefix: toc-
-
-tipue_search:
-     include:
-         pages: false
-         collections: []
-     exclude:
-         files: [search.html, index.html, tags.html]
-         categories: []
-         tags: []
